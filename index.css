@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(221, 100%, 96%);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+.card{
+    width: 600px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: hsl(0, 0%, 100%); */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.result, .summary{
+    width: 50%;
+    padding: 20px;
+}
+.result{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background:linear-gradient(to top,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+}
+.result h5{
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 30px;
+}
+.score{
+    background: linear-gradient();
+    background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    width: 100px;
+    height: 100px; 
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.score h1{
+    color: hsl(0, 0%, 100%);
+}
+.score small{
+    color: hsl(221, 100%, 96%);
+}
+.result h3{
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 20px;
+}
+.result small{
+    width: 80%;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+.summary{
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.summary h4{
+    color: hsl(224, 30%, 27%);
+    padding-bottom: 20px;
+}
+.overview{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reaction, .memory, .verbal, .visual{
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 250px;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+}
+.text-1{
+    padding-left: 81px;
+}
+.text{
+    padding-left: 87px;
+}
+.texts{
+    padding-left: 99px;
+}
+.reaction{
+    background-color: hsl(0, 67%, 93%);
+}
+.memory{
+    background-color: hsl(39, 66%, 91%);
+}
+.verbal{
+    background-color: hsl(167, 61%, 94%);
+}
+.visual{
+    background-color: hsl(235, 46%, 90%);
+}
+.reaction-name, .memory-name, .verbal-name, .visual-name{
+    padding-left: 10px;
+}
+.reaction-name{
+    color: hsl(0, 100%, 67%);
+}
+.memory-name{
+    color: hsl(39, 100%, 56%);
+}
+.verbal-name{
+    color: hsl(166, 100%, 37%);
+}
+.visual-name{
+    color: hsl(234, 85%, 45%);
+}
+.gotten-score{
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+.overall-score{
+    color: hsl(0, 0%, 50%);
+}
+button{
+    margin-top: 30px;
+    border: none;
+    height: 35px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(241, 81%, 54%);
+}
+@media(max-width: 375px){
+    .card{
+        width: 375px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .result{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .summary{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+    .reaction-name, .memory-name, .verbal-name, .visual-name{
+        padding-left: 3px;
+    }
+    .reaction, .memory, .verbal, .visual, button{
+        width: 150px;
+    }
+    .text, .text-1, .texts{
+        padding-left: 3px;
+    }
+}
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
